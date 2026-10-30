@@ -26,7 +26,7 @@ Before doing any MSPbots data work, verify that the "MSPbots MCP" server is conn
     "mcpServers": {
         "mspbots-mcp": {
             "type": "http",
-            "url": "https://owl.mspbots.ai/data-cli/mcp"
+            "url": "https://mcp.mspbots.ai/v1/mcp"
         }
     }
 }
@@ -37,7 +37,7 @@ That is the whole configuration. **No token, no headers.**
 Two details worth not "fixing":
 
 - **No trailing slash: `/mcp`, not `/mcp/`.** The server's OAuth metadata declares
-  its resource as `https://owl.mspbots.ai/data-cli/mcp`, and some clients require
+  its resource as `https://mcp.mspbots.ai/v1/mcp`, and some clients require
   the configured URL to match it exactly. The slashed form can also send clients
   down a discovery path that fails, ending in "Couldn't start sign-in". The slashless
   URL is served directly — no redirect.
@@ -72,7 +72,7 @@ platform token and add it as a header:
     "mcpServers": {
         "mspbots-mcp": {
             "type": "http",
-            "url": "https://owl.mspbots.ai/data-cli/mcp",
+            "url": "https://mcp.mspbots.ai/v1/mcp",
             "headers": { "Authorization": "Bearer <TOKEN>" }
         }
     }
