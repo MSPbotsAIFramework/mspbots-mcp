@@ -1,6 +1,6 @@
 # MSPbots MCP — Claude Code plugin
 
-A Claude Code skill that connects the [MSPbots](https://mspbots.ai) DataCLI MCP server and lets an agent query, search, aggregate, and analyze MSPbots platform data (datasets, integrations, business metrics) on your behalf.
+A Claude Code skill that connects [MSPbots MCP](https://mspbots.ai) and lets an agent query, search, aggregate, and analyze MSPbots platform data (datasets, integrations, business metrics) on your behalf.
 
 This repository is a Claude Code **plugin marketplace**. Installing it adds the `mspbots-mcp` skill to your agent.
 
